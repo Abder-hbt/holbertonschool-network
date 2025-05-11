@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# This script displays all active IPv4 addresses on the machine
+# This script print the ports  open and the programs associated to this ports.
 
-# Use the ifconfig and grep to filter out IPv4 addresses
-ifconfig | grep -w "inet" | awk '{print $2}'
+netstat -tulnp
